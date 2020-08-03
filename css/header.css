@@ -1,0 +1,227 @@
+.header-body {
+  background: url("../img/Layer_5.png") 0 0/cover no-repeat;
+  max-width: 1618px;
+  height: 910px;
+  margin: auto;
+}
+
+.bg {
+  position: sticky;
+  max-width: 1618px;
+  height: 146px;
+  background-color: #212121;
+  margin: auto;
+}
+
+.header-body__top {
+  padding: 0px 0px 0px 0px;
+}
+
+.header-body__top__list ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-body__top__list ul img {
+  margin: -5px 0 5px 0;
+}
+
+.header-body__top__list__link a {
+  margin: 0px 0px 0 60px;
+  color: #ff3448;
+  font-family: Lato;
+  letter-spacing: 0.7px;
+}
+
+.acc:before {
+  content: "";
+  background: url("../../img/icons/icon.png") 0 0/auto auto no-repeat;
+  padding: 0px 10px 0 5px;
+}
+
+.cart:before {
+  content: "";
+  background: url("../../img/icons/cart.png") 0 0/auto auto no-repeat;
+  padding: 0px 10px 0 6px;
+}
+
+.Check:before {
+  content: "";
+  background: url("../../img/icons/check.png") 0 0/auto auto no-repeat;
+  padding: 0px 10px 0 5px;
+}
+
+.lupa:before {
+  content: "";
+  background: url("../../img/icons/linea.png") 0 0/auto auto no-repeat;
+  padding: 0px 10px 0 5px;
+}
+
+.header-body__seller {
+  padding: 10px 0px;
+  margin: auto;
+  max-width: 1170px;
+}
+
+.header-body__seller__container {
+  position: relative;
+}
+
+.header-body__seller__container__item:before {
+  content: "";
+  display: inline-block;
+  max-width: 1170px;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  width: 100%;
+}
+
+.header-body__seller__container__item__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-body__seller__container__item__row__logo {
+  padding: 20px 0;
+}
+.header-body__seller__container__item__row__logo span {
+  font-family: "Lato - Black";
+  font-size: 45px;
+  font-weight: 400;
+  color: #ff3448;
+}
+.header-body__seller__container__item__row__logo span:first-child {
+  color: #ffffff;
+}
+.header-body__seller__container__item__row__logo p {
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.items-body {
+  display: flex;
+}
+
+.items-body__contacts {
+  padding: 8px 0;
+}
+
+.items-body__contacts__time {
+  /* Style for "Mon-Fri: 8" */
+  color: #a2a2a2;
+  font-size: 14px;
+  text-transform: uppercase;
+  /* Text style for ", Mon-Fri:" */
+  letter-spacing: 0.7px;
+}
+
+.items-body__list {
+  display: flex;
+}
+
+.items-body__list__block {
+  margin: 14px 10px 0 0;
+  padding: 0 10px 54px 20px;
+}
+.items-body__list__block:before {
+  margin: 0 10px 0 0;
+  padding: 0 0 68px 0;
+  content: "";
+  border-left: 2px solid green;
+  height: 64px;
+}
+
+.items-body__list__column {
+  margin: 0 0px 0 30px;
+}
+
+.items-body__contacts__number {
+  padding: 21px 0;
+  color: #ffffff;
+  text-align: right;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.items-body__contacts__number:before {
+  content: "";
+  background: url("../../img/icons/tel.png") 0 0/auto auto no-repeat;
+  padding: 0px 10px 0 19px;
+}
+
+.items-body__list__column__icon {
+  text-align: center;
+  padding: 0 0 18.5px 0;
+}
+
+.items-body__list__column__text {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+.items-body__list__column__text a {
+  color: #ffffff;
+}
+
+.header-body__bottom {
+  /* Style for "Rectangle" */
+  max-width: 1618px;
+  height: 55px;
+  background-color: #030303;
+  position: relative;
+  margin: auto;
+}
+
+.header-body__bottom__menu {
+  justify-content: space-between;
+}
+
+.header-body__bottom__menu__container {
+  max-width: 1170px;
+  margin: auto;
+}
+.header-body__bottom__menu__container ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.header-body__bottom__menu__link {
+  /* Style for "Home" */
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  padding: 0px 30px;
+}
+
+/*
+	.header-menu__icon{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/

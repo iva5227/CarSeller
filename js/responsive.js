@@ -1,0 +1,1 @@
+function adaptive_header(e,a){var n=$(".header-menu"),d=$(".header-contacts");e<767?d.hasClass("done")||d.addClass("done").appendTo(n):d.hasClass("done")&&d.removeClass("done").appendTo(n)}function adaptive_function(){adaptive_header($(window).outerWidth(),$(window).outerHeight())}$(window).resize((function(e){adaptive_function()})),adaptive_function();
